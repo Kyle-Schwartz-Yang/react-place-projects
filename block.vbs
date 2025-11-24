@@ -1,0 +1,1 @@
+If MsgBox("Do you want to lock the computer?", 4 + 32, "Confirm Block") = 6 Then CreateObject("WScript.Shell").Run "rundll32 user32.dll,LockWorkStation", 0, False

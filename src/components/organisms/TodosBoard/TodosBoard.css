@@ -1,0 +1,69 @@
+.todos-board__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todos-board__item {
+  flex: 1 1 32%;
+}
+
+.todo-card {
+  border: 1px solid #424242;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.todo-card__header {
+  margin-bottom: 0.5rem;
+}
+
+.todo-card__title {
+  /* font-size: 1rem; */
+  font-weight: 600;
+  margin: 0;
+}
+
+.todo-card__desc {
+  flex-grow: 1;
+  /* font-size: 0.9rem; */
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.todo-card__footer {
+  border-top: 1px solid #424242;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 0.8rem; */
+}
+
+.todo-card__date {
+  color: #888;
+}
+
+.todo-card__status {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.todo-card__status--todo {
+  color: #e67e22;
+}
+
+.todo-card__status--inprogress {
+  color: #2980b9;
+}
+
+.todo-card__status--done {
+  color: #27ae60;
+}
